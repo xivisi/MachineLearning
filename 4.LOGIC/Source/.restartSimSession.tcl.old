@@ -1,0 +1,264 @@
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Fri Sep 21 16:52:43 2018
+# Designs open: 1
+#   Sim: /home/liyong/Source/MachineLearning/4.LOGIC/SXY.srcs/simv
+# Toplevel windows open: 2
+# 	TopLevel.1
+# 	TopLevel.2
+#   Source.1: sfp_add_sub_test
+#   Wave.1: 97 signals
+#   Group count = 4
+#   Group add_sub signal count = 46
+#   Group std2slf_a signal count = 12
+#   Group std2slf_b signal count = 12
+#   Group f2s signal count = 27
+# End_DVE_Session_Save_Info
+
+# DVE version: L-2016.06_Full64
+# DVE build date: May 24 2016 21:01:02
+
+
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+
+gui_set_loading_session_type Restart
+gui_continuetime_set -value 100ns
+gui_clear_window -type Wave
+gui_clear_window -type List
+
+# Application preferences
+gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+#<WindowLayout>
+
+# DVE top-level session
+
+
+# Create and position top-level window: TopLevel.1
+
+set TopLevel.1 TopLevel.1
+
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
+set DriverLoad.1 DriverLoad.1
+gui_sync_global -id ${TopLevel.1} -option true
+
+# MDI window settings
+set Source.1 Source.1
+gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+
+# End MDI window settings
+
+
+# Create and position top-level window: TopLevel.2
+
+set TopLevel.2 TopLevel.2
+
+# Docked window settings
+gui_sync_global -id ${TopLevel.2} -option true
+
+# MDI window settings
+set Wave.1 Wave.1
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 557} {child_wave_right 1357} {child_wave_colname 275} {child_wave_colvalue 277} {child_wave_col1 0} {child_wave_col2 1}}
+
+# End MDI window settings
+
+
+#</WindowLayout>
+
+#<Database>
+
+gui_set_precision 1ns
+gui_set_time_units 1ns
+#</Database>
+
+# DVE Global setting session: 
+
+
+# Global: Breakpoints
+
+# Global: Bus
+
+# Global: Expressions
+
+# Global: Signal Time Shift
+
+# Global: Signal Compare
+
+# Global: Signal Groups
+gui_load_child_values {sfp_add_sub_test.f2s}
+gui_load_child_values {sfp_add_sub_test.std2slf_a}
+gui_load_child_values {sfp_add_sub_test.std2slf_b}
+
+
+set _session_group_1 add_sub
+gui_sg_create "$_session_group_1"
+set add_sub "$_session_group_1"
+
+gui_sg_addsignal -group "$_session_group_1" { sfp_add_sub_test.add_sub.i_clk sfp_add_sub_test.add_sub.i_da sfp_add_sub_test.add_sub.i_db sfp_add_sub_test.add_sub.i_mode sfp_add_sub_test.add_sub.i_req sfp_add_sub_test.add_sub.i_rst sfp_add_sub_test.add_sub.o_do sfp_add_sub_test.add_sub.o_vld sfp_add_sub_test.add_sub.p1_exp_a_pre sfp_add_sub_test.add_sub.p1_fra_a_pre sfp_add_sub_test.add_sub.p1_exp_b_pre sfp_add_sub_test.add_sub.p1_fra_b_pre sfp_add_sub_test.add_sub.p1_vld sfp_add_sub_test.add_sub.p1_exp_a sfp_add_sub_test.add_sub.p1_fra_a sfp_add_sub_test.add_sub.p1_exp_b sfp_add_sub_test.add_sub.p1_fra_b sfp_add_sub_test.add_sub.p1_ge sfp_add_sub_test.add_sub.p1_mode sfp_add_sub_test.add_sub.p2_vld sfp_add_sub_test.add_sub.p2_mode sfp_add_sub_test.add_sub.p2_fra_a sfp_add_sub_test.add_sub.p2_fra_b sfp_add_sub_test.add_sub.p2_exp_val sfp_add_sub_test.add_sub.p2_ge sfp_add_sub_test.add_sub.p2_exp_shift sfp_add_sub_test.add_sub.p3_vld sfp_add_sub_test.add_sub.p3_mode sfp_add_sub_test.add_sub.p3_exp_val sfp_add_sub_test.add_sub.p3_fra_a sfp_add_sub_test.add_sub.p3_fra_b sfp_add_sub_test.add_sub.p4_vld sfp_add_sub_test.add_sub.p4_exp_val sfp_add_sub_test.add_sub.p4_fra_val sfp_add_sub_test.add_sub.p5_vld sfp_add_sub_test.add_sub.p5_exp_val sfp_add_sub_test.add_sub.p5_fra_val sfp_add_sub_test.add_sub.p5_clv sfp_add_sub_test.add_sub.p6_vld sfp_add_sub_test.add_sub.p6_exp_val sfp_add_sub_test.add_sub.p6_fra_val sfp_add_sub_test.add_sub.p6_shift_vld sfp_add_sub_test.add_sub.p6_clv sfp_add_sub_test.add_sub.p7_exp_val sfp_add_sub_test.add_sub.p7_fra_val sfp_add_sub_test.add_sub.p7_vld }
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_a_pre}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_a_pre}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_b_pre}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_b_pre}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p1_exp_a}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p1_exp_a}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_a}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_a}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p1_exp_b}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p1_exp_b}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_b}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p1_fra_b}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p2_fra_a}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p2_fra_a}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p2_fra_b}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p2_fra_b}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p2_exp_val}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p2_exp_val}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p2_exp_shift}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p2_exp_shift}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p3_exp_val}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p3_exp_val}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p3_fra_a}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p3_fra_a}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p3_fra_b}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p3_fra_b}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p4_exp_val}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p4_exp_val}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p4_fra_val}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p4_fra_val}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p5_exp_val}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p5_exp_val}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p5_fra_val}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p5_fra_val}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p5_clv}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p5_clv}
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.add_sub.p6_exp_val}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.add_sub.p6_exp_val}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.add_sub.p6_fra_val}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.add_sub.p6_fra_val}
+
+set _session_group_2 std2slf_a
+gui_sg_create "$_session_group_2"
+set std2slf_a "$_session_group_2"
+
+gui_sg_addsignal -group "$_session_group_2" { sfp_add_sub_test.std2slf_a.i_clk sfp_add_sub_test.std2slf_a.i_dat sfp_add_sub_test.std2slf_a.i_req sfp_add_sub_test.std2slf_a.i_rst sfp_add_sub_test.std2slf_a.o_dat sfp_add_sub_test.std2slf_a.o_vld sfp_add_sub_test.std2slf_a.p1_exp sfp_add_sub_test.std2slf_a.p1_exp_pre sfp_add_sub_test.std2slf_a.p1_fra sfp_add_sub_test.std2slf_a.p1_fra_pre sfp_add_sub_test.std2slf_a.p1_sig_pre sfp_add_sub_test.std2slf_a.p1_vld }
+
+set _session_group_3 std2slf_b
+gui_sg_create "$_session_group_3"
+set std2slf_b "$_session_group_3"
+
+gui_sg_addsignal -group "$_session_group_3" { sfp_add_sub_test.std2slf_b.i_clk sfp_add_sub_test.std2slf_b.i_dat sfp_add_sub_test.std2slf_b.i_req sfp_add_sub_test.std2slf_b.i_rst sfp_add_sub_test.std2slf_b.o_dat sfp_add_sub_test.std2slf_b.o_vld sfp_add_sub_test.std2slf_b.p1_exp sfp_add_sub_test.std2slf_b.p1_exp_pre sfp_add_sub_test.std2slf_b.p1_fra sfp_add_sub_test.std2slf_b.p1_fra_pre sfp_add_sub_test.std2slf_b.p1_sig_pre sfp_add_sub_test.std2slf_b.p1_vld }
+
+set _session_group_4 f2s
+gui_sg_create "$_session_group_4"
+set f2s "$_session_group_4"
+
+gui_sg_addsignal -group "$_session_group_4" { sfp_add_sub_test.f2s.i_clk sfp_add_sub_test.f2s.i_rst sfp_add_sub_test.f2s.i_req sfp_add_sub_test.f2s.i_dat sfp_add_sub_test.f2s.p1_exp_pre sfp_add_sub_test.f2s.p1_fra_pre sfp_add_sub_test.f2s.p1_vld sfp_add_sub_test.f2s.p1_exp sfp_add_sub_test.f2s.p1_fra sfp_add_sub_test.f2s.p1_sig sfp_add_sub_test.f2s.p2_exp sfp_add_sub_test.f2s.p2_fra sfp_add_sub_test.f2s.p2_shift sfp_add_sub_test.f2s.p2_sig sfp_add_sub_test.f2s.p2_vld sfp_add_sub_test.f2s.p2_zero sfp_add_sub_test.f2s.p3_exp sfp_add_sub_test.f2s.p3_fra sfp_add_sub_test.f2s.p3_shift sfp_add_sub_test.f2s.p3_sig sfp_add_sub_test.f2s.p3_vld sfp_add_sub_test.f2s.p4_exp sfp_add_sub_test.f2s.p4_fra sfp_add_sub_test.f2s.p4_sig sfp_add_sub_test.f2s.p4_vld sfp_add_sub_test.f2s.o_vld sfp_add_sub_test.f2s.o_dat }
+gui_set_radix -radix {decimal} -signals {Sim:sfp_add_sub_test.f2s.p1_exp_pre}
+gui_set_radix -radix {unsigned} -signals {Sim:sfp_add_sub_test.f2s.p1_exp_pre}
+gui_set_radix -radix {hex} -signals {Sim:sfp_add_sub_test.f2s.p1_fra_pre}
+gui_set_radix -radix {twosComplement} -signals {Sim:sfp_add_sub_test.f2s.p1_fra_pre}
+
+# Global: Highlighting
+
+# Global: Stack
+gui_change_stack_mode -mode list
+
+# Post database loading setting...
+
+# Save global setting...
+
+# Wave/List view global setting
+gui_cov_show_value -switch false
+
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {
+    if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {
+        gui_close_window -window $__top
+    }
+}
+gui_set_loading_session_type noSession
+# DVE View/pane content session: 
+
+
+# Hier 'Hier.1'
+gui_show_window -window ${Hier.1}
+gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+gui_list_set_filter -id ${Hier.1} -text {*}
+gui_change_design -id ${Hier.1} -design Sim
+catch {gui_list_expand -id ${Hier.1} sfp_add_sub_test}
+catch {gui_list_select -id ${Hier.1} {sfp_add_sub_test.add_sub}}
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Data 'Data.1'
+gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Data.1} -text {*}
+gui_list_show_data -id ${Data.1} {sfp_add_sub_test.std2slf_b}
+gui_view_scroll -id ${Data.1} -vertical -set 0
+gui_view_scroll -id ${Data.1} -horizontal -set 0
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# DriverLoad 'DriverLoad.1'
+gui_get_drivers -session -id ${DriverLoad.1} -signal {sfp_add_sub_test.add_sub.p6_exp_val[8:0]} -time 745 -starttime 752
+gui_get_drivers -session -id ${DriverLoad.1} -signal {sfp_add_sub_test.f2s.p3_shift[4:0]} -time 0 -starttime 44
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active sfp_add_sub_test /home/liyong/Source/MachineLearning/4.LOGIC/SXY.srcs/sfp_add_sub_test.v
+gui_view_scroll -id ${Source.1} -vertical -set 0
+gui_src_set_reusable -id ${Source.1}
+
+# View 'Wave.1'
+gui_wv_sync -id ${Wave.1} -switch false
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+gui_list_set_height -id Wave -height 25
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+gui_list_create_group_when_add -wave -disable
+gui_wv_zoom_timerange -id ${Wave.1} 0 18743297
+gui_list_add_group -id ${Wave.1} -after {New Group} {std2slf_a}
+gui_list_add_group -id ${Wave.1} -after {New Group} {std2slf_b}
+gui_list_add_group -id ${Wave.1} -after {New Group} {add_sub}
+gui_list_add_group -id ${Wave.1} -after {New Group} {f2s}
+gui_list_collapse -id ${Wave.1} std2slf_b
+gui_list_collapse -id ${Wave.1} add_sub
+gui_list_collapse -id ${Wave.1} f2s
+gui_seek_criteria -id ${Wave.1} {Any Edge}
+
+
+
+gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+gui_list_set_height -id Wave -height $origWaveHeight
+if {$origGroupCreationState} {
+	gui_list_create_group_when_add -wave -enable
+}
+if { $groupExD } {
+ gui_msg_report -code DVWW028
+}
+gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.1} -text {*}
+gui_list_set_insertion_bar  -id ${Wave.1} -group add_sub  -position in
+
+gui_view_scroll -id ${Wave.1} -vertical -set 0
+gui_show_grid -id ${Wave.1} -enable false
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} {
+	gui_set_active_window -window ${TopLevel.1}
+	gui_set_active_window -window ${Source.1}
+}
+if {[gui_exist_window -window ${TopLevel.2}]} {
+	gui_set_active_window -window ${TopLevel.2}
+	gui_set_active_window -window ${Wave.1}
+}
+#</Session>
+
