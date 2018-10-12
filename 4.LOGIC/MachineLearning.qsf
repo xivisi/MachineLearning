@@ -50,8 +50,8 @@ set_global_assignment -name EDA_SIMULATION_TOOL "VCS MX (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VERILOG_FILE Source/convolution/convolution.v
-set_global_assignment -name VERILOG_FILE Source/convolution/conv_core.v
+set_global_assignment -name VERILOG_FILE Source/convolution/conv_pe.v
 set_global_assignment -name QIP_FILE IP/ip_ram_conv_args.qip
 set_global_assignment -name QIP_FILE IP/ip_ram_conv_dbuf.qip
-set_global_assignment -name QIP_FILE IP/ip_mac_conv.qip
+set_global_assignment -name QIP_FILE IP/ip_mult_s16.qip
+set_global_assignment -name QIP_FILE IP/ip_mult_s8.qip

@@ -1,0 +1,81 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation --family="Stratix IV" --part=EP4SGX530HH35C2
+Progress: Loading IP/ip_fft_mfcc.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip_fft_mfcc.fft_ii_0: Radix-2 digit reverse implied
+Info: ip_fft_mfcc: Generating ip_fft_mfcc "ip_fft_mfcc" for SIM_VERILOG
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi1.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr4.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr1.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi2.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr2.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi3.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr3.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi4.hex
+Info: fft_ii_0: "ip_fft_mfcc" instantiated altera_fft_ii "fft_ii_0"
+Info: ip_fft_mfcc: Done "ip_fft_mfcc" with 2 modules, 208 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/ip_fft_mfcc.spd --output-directory=/home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/ip_fft_mfcc.spd --output-directory=/home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc.qsys --block-symbol-file --output-directory=/home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc --family="Stratix IV" --part=EP4SGX530HH35C2
+Progress: Loading IP/ip_fft_mfcc.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip_fft_mfcc.fft_ii_0: Radix-2 digit reverse implied
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc.qsys --synthesis=VERILOG --output-directory=/home/liyong/Source/MachineLearning/4.LOGIC/IP/ip_fft_mfcc/synthesis --family="Stratix IV" --part=EP4SGX530HH35C2
+Progress: Loading IP/ip_fft_mfcc.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip_fft_mfcc.fft_ii_0: Radix-2 digit reverse implied
+Info: ip_fft_mfcc: Generating ip_fft_mfcc "ip_fft_mfcc" for QUARTUS_SYNTH
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi1.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr4.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr1.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi2.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr2.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi3.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twr3.hex
+Info: fft_ii_0: --- add file: ip_fft_mfcc_fft_ii_0_opt_twi4.hex
+Info: fft_ii_0: "ip_fft_mfcc" instantiated altera_fft_ii "fft_ii_0"
+Info: ip_fft_mfcc: Done "ip_fft_mfcc" with 2 modules, 50 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

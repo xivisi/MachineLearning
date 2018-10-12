@@ -211,8 +211,7 @@ module ip_mac_conv (
 		altmult_add_component.width_b = 16,
 		altmult_add_component.width_chainin = 1,
 		altmult_add_component.width_result = 34,
-		altmult_add_component.zero_chainout_output_aclr = "UNUSED",
-		altmult_add_component.zero_chainout_output_register = "CLOCK0",
+		altmult_add_component.zero_chainout_output_register = "UNREGISTERED",
 		altmult_add_component.zero_loopback_aclr = "UNUSED",
 		altmult_add_component.zero_loopback_output_aclr = "UNUSED",
 		altmult_add_component.zero_loopback_output_register = "CLOCK0",
@@ -465,8 +464,7 @@ endmodule
 // Retrieval info: CONSTANT: WIDTH_B NUMERIC "16"
 // Retrieval info: CONSTANT: WIDTH_CHAININ NUMERIC "1"
 // Retrieval info: CONSTANT: WIDTH_RESULT NUMERIC "34"
-// Retrieval info: CONSTANT: ZERO_CHAINOUT_OUTPUT_ACLR STRING "UNUSED"
-// Retrieval info: CONSTANT: ZERO_CHAINOUT_OUTPUT_REGISTER STRING "CLOCK0"
+// Retrieval info: CONSTANT: ZERO_CHAINOUT_OUTPUT_REGISTER STRING "UNREGISTERED"
 // Retrieval info: CONSTANT: ZERO_LOOPBACK_ACLR STRING "UNUSED"
 // Retrieval info: CONSTANT: ZERO_LOOPBACK_OUTPUT_ACLR STRING "UNUSED"
 // Retrieval info: CONSTANT: ZERO_LOOPBACK_OUTPUT_REGISTER STRING "CLOCK0"
